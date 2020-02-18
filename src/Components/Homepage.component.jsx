@@ -4,7 +4,7 @@ const Homepage = ()=>{
     return(
         <div className="homepage">
             <div className="directory-menu">
-                <div className="menu-item">
+                <div className="menu-item fitem">
                     <div className="content">
                         <h1 className="title">
                             HATS
@@ -14,7 +14,7 @@ const Homepage = ()=>{
                         </span>
                     </div>
                 </div>
-                <div className="menu-item">
+                <div className="menu-item fitem">
                     <div className="content">
                         <h1 className="title">
                             SHOES
@@ -24,7 +24,7 @@ const Homepage = ()=>{
                         </span>
                     </div>
                 </div>
-                <div className="menu-item">
+                <div className="menu-item fitem">
                     <div className="content">
                         <h1 className="title">
                             CAPS
@@ -34,10 +34,20 @@ const Homepage = ()=>{
                         </span>
                     </div>
                 </div>
-                <div className="menu-item">
+                <div className="menu-item item">
                     <div className="content">
                         <h1 className="title">
-                            WALLETS
+                            WALLETS MEN
+                        </h1>
+                        <span className="sub-title">
+                            SHOP NOW
+                        </span>
+                    </div>
+                </div>
+                <div className="menu-item item">
+                    <div className="content">
+                        <h1 className="title">
+                            BELTS MEN
                         </h1>
                         <span className="sub-title">
                             SHOP NOW
