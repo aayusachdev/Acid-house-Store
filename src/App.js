@@ -3,7 +3,7 @@ import Homepage from './Components/Homepage.component'
 const App =()=> {
   return(
     <>
-    <h1>ECOMMERCE STORE coming soon</h1>
+    <h1 className="store-heading"><span className="LV-title">LV</span> STORE</h1>
     <Homepage/>
     </>
   )

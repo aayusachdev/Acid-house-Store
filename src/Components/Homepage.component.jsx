@@ -1,49 +1,32 @@
 import React from 'react'
+import '../Styles/Homepage.style.css'
+import {menuItems} from '../Constants/Data'
+
 
 const Homepage = ()=>{
     return(
         <div className="homepage">
             <div className="directory-menu">
-                <div className="menu-item">
-                    <div className="content">
-                        <h1 className="title">
-                            HATS
-                        </h1>
-                        <span className="sub-title">
-                            SHOP NOW
-                        </span>
-                    </div>
-                </div>
-                <div className="menu-item">
-                    <div className="content">
-                        <h1 className="title">
-                            SHOES
-                        </h1>
-                        <span className="sub-title">
-                            SHOP NOW
-                        </span>
-                    </div>
-                </div>
-                <div className="menu-item">
-                    <div className="content">
-                        <h1 className="title">
-                            CAPS
-                        </h1>
-                        <span className="sub-title">
-                            SHOP NOW
-                        </span>
-                    </div>
-                </div>
-                <div className="menu-item">
-                    <div className="content">
-                        <h1 className="title">
-                            WALLETS
-                        </h1>
-                        <span className="sub-title">
-                            SHOP NOW
-                        </span>
-                    </div>
-                </div>
+              
+                {menuItems.map((item,index)=>{
+                    return(
+                        <React.Fragment key={index}>
+                        <div className="menu-item" style={{ 
+                            height: 300,
+                            backgroundImage: `url(${item.imgsrc})`
+                            }}>
+                        <div className="content">
+                            <h1 className="title">
+                                {item.name}
+                            </h1>
+                            <span className="sub-title">
+                            {item.link}
+                            </span>
+                        </div>
+                    </div> 
+                    </React.Fragment>
+                    )
+                })}
             </div>
         </div>
     )
