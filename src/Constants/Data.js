@@ -13,7 +13,7 @@ export const menuItems= [
     {
         name: "WATCHES",
         link: "SHOP NOW",
-        imgsrc: "https://www.thetrendspotter.net/wp-content/uploads/2016/01/Luxury-Watch-Brands.jpg"
+        imgsrc: "https://www.graff.com/wp-content/uploads/2018/03/A-Graff-GyroGraff-Endangered-Species-48mm-mens-Watch-with-Panda-tigar-and-elephant-Dial-feature-image-2000x1333.jpg"
 
 },
 {
