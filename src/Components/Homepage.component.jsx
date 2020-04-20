@@ -2,16 +2,19 @@ import React from 'react'
 import '../Styles/Homepage.style.css'
 import {menuItems} from '../Constants/Data'
 
-
+/**
+ * Homepage Component for menu items
+ */
 const Homepage = ()=>{
     return(
         <div className="homepage">
             <div className="directory-menu">
-              
+
                 {menuItems.map((item,index)=>{
                     return(
                         <React.Fragment key={index}>
-                        <div className="menu-item" style={{ 
+                        <div className="menu-item-container">
+                        <div className="menu-item" style={{
                             height: 300,
                             backgroundImage: `url(${item.imgsrc})`
                             }}>
@@ -23,7 +26,8 @@ const Homepage = ()=>{
                             {item.link}
                             </span>
                         </div>
-                    </div> 
+                    </div>
+                    </div>
                     </React.Fragment>
                     )
                 })}
