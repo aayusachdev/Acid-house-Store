@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+.app-header {
+  display: flex;
+  background-color: blueviolet;
+  height: 12vh;
+  width: 100%;
+  box-shadow: 0px 4px 2px rgba(#888, 0.6);
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin-top: 0;
+  z-index: 999;
+  &__title {
+    font-family: "Roboto";
+    font-weight: 100;
+    color: #f2f2f2;
+    font-size: 48px;
+    padding: 12px 75px;
+    margin: 0 3%;
+    &--bold {
+      font-family: "Roboto";
+      font-weight: 700;
+      color: #f2f2f2;
+    }
+  }
+}
