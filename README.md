@@ -1,1 +1,1 @@
-# Acidhouse Store Ecommerce Platform
+# Acidhouse Store
