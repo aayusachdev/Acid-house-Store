@@ -1,6 +1,7 @@
 import React from "react";
 import "../Styles/Appheader.style.scss";
 import { withRouter } from "react-router-dom";
+
 /**
  * App Header component
  */

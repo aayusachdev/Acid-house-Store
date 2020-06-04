@@ -27,3 +27,15 @@ SWITCH
 Makes sure only one component is rendered from all the routes if more than one matches.
 <switch>
 </switch>
+
+Route:
+
+path: relative url / means localhost or base URL
+exact means that path must be exactly /
+component is the component we want to render
+with the exact as long as the path matches it will render the component i.e. all the components
+which have / in their path which be rendered.
+
+Switch:
+
+Makes sure only one component is rendered from all the routes if more than one matches.
