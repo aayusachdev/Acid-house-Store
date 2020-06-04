@@ -1,11 +1,13 @@
 import React from "react";
 import "../Styles/Appheader.style.scss";
+import { withRouter } from "react-router-dom";
 /**
  * App Header component
  */
-function AppHeader() {
+function AppHeader(props) {
+  console.log("Header", props);
   return (
-    <div className="app-header">
+    <div className="app-header" onClick={() => props.history.push("./")}>
       <p className="app-header__title">
         ACID <span className="app-header__title--bold">HOUSE</span>
       </p>
@@ -13,4 +15,4 @@ function AppHeader() {
   );
 }
 
-export default AppHeader;
+export default withRouter(AppHeader);

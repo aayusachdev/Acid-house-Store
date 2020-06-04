@@ -1,2 +1,22 @@
 $primary-color: #f2f2f2;
 $secondary-color: red;
+
+@mixin set-light-font {
+  font-family: "Roboto";
+  font-weight: 100;
+}
+
+@mixin set-medium-font {
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
+@mixin set-regular-font {
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+@mixin set-bold-font {
+  font-family: "Roboto";
+  font-weight: 700;
+}

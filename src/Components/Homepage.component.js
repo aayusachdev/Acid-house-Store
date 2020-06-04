@@ -5,24 +5,31 @@ import { menuItems } from "../Constants/Data";
 /**
  * Homepage Component for menu items
  */
-const Homepage = () => {
+const Homepage = (props) => {
+  console.log(props);
   return (
     <div className="homepage">
       <div className="directory-menu">
-        {menuItems.map((item, index) => {
+        {menuItems.map(({ name, imgsrc, link, linkUrl, index }) => {
           return (
             <React.Fragment key={index}>
-              <div className="menu-item-container">
+              <div
+                className="menu-item-container"
+                onClick={() => {
+                  console.log(name);
+                  props.history.push(`${props.match.url}${linkUrl}`);
+                }}
+              >
                 <div
                   className="menu-item"
                   style={{
                     height: 300,
-                    backgroundImage: `url(${item.imgsrc})`,
+                    backgroundImage: `url(${imgsrc})`,
                   }}
                 >
                   <div className="content">
-                    <h1 className="title">{item.name}</h1>
-                    <span className="sub-title">{item.link}</span>
+                    <h1 className="title">{name}</h1>
+                    <span className="sub-title">{link}</span>
                   </div>
                 </div>
               </div>

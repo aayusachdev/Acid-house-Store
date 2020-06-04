@@ -2,8 +2,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto";
 }
 
+/*The entire landing page excluding header is flex-col*/
 .homepage {
   display: flex;
   flex-direction: column;
@@ -13,69 +15,78 @@ body {
   padding: 20px 20px;
 }
 
+/*Parent for all the menu items*/
 .directory-menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 5px 10px;
-  width: 90%;
+  width: 95%;
 }
 
-.menu-item {
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-}
-
+/*Individual menu items displayed like watches, men, women*/
 .menu-item-container {
   min-width: 30%;
   height: 300px;
   flex: 1 1 auto;
   border-radius: 3px;
-  align-items: center;
   margin: 44px 20px;
   box-shadow: 2px 2px 4px 2px rgba(242, 242, 242, 0.2);
   position: relative;
   overflow: hidden;
+
+  /*On hovering the individual item.*/
   &:hover {
-    box-shadow: 2px 4px 5px 0px rgba(#050505, 0.3);
+    box-shadow: 1px 1px 5px 0px rgba(#050505, 0.3);
     border: 1.5px solid rgba(blueviolet, 0.5);
   }
+}
+
+/* Individual image of the menu item displayed */
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .menu-item:hover {
   cursor: pointer;
   transform: scale(1.2);
-  transition: transform 7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 10s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .menu-item:hover > .content {
   opacity: 0.9;
 }
 
+/*Wrapper for item title and sub title*/
 .content {
+  height: 80px;
+  padding: 0 25px;
+  display: flex;
+  align-self: center;
   background-color: #f2f2f2;
-  display: inline-block;
-  min-width: 20%;
-  padding: 0 20px;
-  margin: 0 auto;
-  position: absolute;
-  top: 25%;
-  left: 30%;
-  opacity: 0.6;
+  opacity: 0.5;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid blueviolet;
+}
+.title {
+  font-weight: 500;
+  margin-bottom: 6px;
+  font-family: "Roboto";
+  font-size: 22px;
+  color: #4d3c31;
 }
 
-.title {
-  font-family: "Roboto";
-  font-weight: 300;
-  color: #050505;
-  display: block;
-  text-align: center;
-}
 .sub-title {
+  font-weight: lighter;
+  font-size: 16px;
   font-family: "Roboto";
   font-weight: 300;
   color: #4d3c31;
-  display: block;
-  text-align: center;
 }
