@@ -1,6 +1,6 @@
 .collection-item {
   display: flex;
-  height: 350px;
+  height: 400px;
   margin: 1% 0%;
   flex-direction: column;
 }
@@ -12,6 +12,13 @@
   background-size: cover;
 }
 
+.collection-footer {
+  display: flex;
+  height: 5%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .collection__preview {
   display: flex;
   flex-wrap: wrap;
@@ -21,12 +28,6 @@
 
 .collection-container {
   margin: 5vh 0;
-}
-
-.collection-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .shop-page {
