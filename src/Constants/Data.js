@@ -7,7 +7,7 @@ export const menuItems = [
 
     },
     {
-        name: "SHOES",
+        name: "SNEAKERS",
         link: "SHOP NOW",
         imgsrc: "https://images.businessoffashion.com/site/uploads/2017/10/nike.png?auto=format%2Ccompress&crop=top&fit=crop&h=575&w=1023",
         linkUrl: "shoes"

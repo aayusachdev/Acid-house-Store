@@ -1,0 +1,36 @@
+.collection-item {
+  display: flex;
+  height: 400px;
+  margin: 1% 0%;
+  flex-direction: column;
+}
+
+.item-image {
+  height: 95%;
+  width: 350px;
+  background-position: center;
+  background-size: cover;
+}
+
+.collection-footer {
+  display: flex;
+  height: 5%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.collection__preview {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.collection-container {
+  margin: 5vh 0;
+}
+
+.shop-page {
+  margin: 10% 3%;
+  background-color: #fff;
+}
